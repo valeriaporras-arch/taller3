@@ -12,5 +12,14 @@ public class Aperitivo {
     float idAperitivo;
     String tipoAperitivo;
     String sabor;
+
+    public Aperitivo(float idAperitivo, String tipoAperitivo, String sabor) {
+        this.idAperitivo = idAperitivo;
+        this.tipoAperitivo = tipoAperitivo;
+        this.sabor = sabor;
+    }
+    
+    
+    
     
 }

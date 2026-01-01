@@ -28,7 +28,7 @@ public class Bebida {
 
     @Override
     public String toString() {
-        return "Bebida{" + "idBebida=" + idBebida + ", nombre=" + nombre + ", ingredientes=" + ingredientes + ", precio=" + precio + '}';
+        return "Bebida{" + "idBebida=" + idBebida + ", nombre=" + nombre + ", ingredientes=" + ingredientes + ", precio=" + precio + '}'-;
     }
     
     

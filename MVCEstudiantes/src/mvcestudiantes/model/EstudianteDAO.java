@@ -13,7 +13,7 @@ import java.util.List;
  * @author UIS
  */
 public class EstudianteDAO {
-    //base de datos psra guardar dat
+    //base de datos psra guardar dat  val
     private static List<Estudiante> listaEstudiantes = new ArrayList<>();
     
     //METODO Crear (registrar)
@@ -52,5 +52,15 @@ public class EstudianteDAO {
         return null;
     }
     
-    //METODO
+    //METODO Actualizar
+    
+    public boolean actializarDatos (Estudiante estActualizado) {
+        for (int i = 0; i < listaEstudiantes.size(); i++) {
+            if (listaEstudiantes.get(i).getId().equals(estActualizado.getId())) {
+                listaEstudiantes.set(i, estActualizado);
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -13,12 +13,12 @@ public class Profesores {
     private int id;
     private String nombre;
     private String apellido;
-    private Materia materia;
+    private String materia;
 
     public Profesores() {
     }
 
-    public Profesores(int id, String nombre, String apellido, Materia materia) {
+    public Profesores(int id, String nombre, String apellido, String materia) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -49,17 +49,17 @@ public class Profesores {
         this.apellido = apellido;
     }
 
-    public Materia getMateria() {
+    public String getMateria() {
         return materia;
     }
 
-    public void setMateria(Materia materia) {
+    public void setMateria(String materia) {
         this.materia = materia;
     }
 
     @Override
     public String toString() {
-        return "Profesor{" + "id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", materia=" + materia + '}';
+        return "Profesores{" + "id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", materia=" + materia + '}';
     }
     
     

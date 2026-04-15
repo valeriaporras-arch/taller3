@@ -22,8 +22,21 @@ import mvcestudiantes.view.VMateria;
  */
 public class CMateria implements ActionListener{
     
+    //  Gette
+    public VMateria getVista() {
+        return vista;
+    }
+
+    public MateriaDAO getDao() {
+        return dao;
+    }
+    
+    
+    
     private VMateria vista;
     private MateriaDAO dao;
+    
+    
     
     public CMateria (VMateria vista, MateriaDAO dao) {
         this.vista = vista;
@@ -96,7 +109,7 @@ public class CMateria implements ActionListener{
                 JOptionPane.showMessageDialog(vista, "No se pudo actualizar.");
             }
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(vista, "Error al acruaaalizar.");
+            JOptionPane.showMessageDialog(vista, "Error al acrualizar.");
         }
     }
     

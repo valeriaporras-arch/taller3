@@ -36,6 +36,8 @@ public class ScreenManager {
             controlador = null;
             
             System.out.println("Pantalla cerrada yobjetos liberados.");
+            controlador.getVista().setVisible(false);
+            
         }
     }
     
@@ -48,7 +50,7 @@ public class ScreenManager {
         
         vista.setVisible(true);
         vista.setLocationRelativeTo(null);
-        vista.setTitle("Manu Gestion academica.");
+        vista.setTitle("Menu Gestion academica.");
     }
     
     public static void cerrarMateria(CMateria controlador) {
@@ -57,6 +59,7 @@ public class ScreenManager {
             controlador = null;
             
             System.out.println("Pantalla cerrada y objetos liberados.");
+            controlador.getVista().setVisible(false);
         }
     }
     //    PROFESORES
@@ -68,16 +71,26 @@ public class ScreenManager {
         
         vista.setVisible(true);
         vista.setLocationRelativeTo(null);
-        vista.setTitle("Manu gestion academica.");
+        vista.setTitle("Menu gestion academica.");
     }
     
-    public static void cerrarProfesor(CMateria controlador) {
+    public static void cerrarProfesor(CProfesores controlador) {
         if (controlador != null) {
-            controlador.finalizar();
+            controlador.finalizar();//1 forma de cerrar desde el controller
             controlador = null;
             
             System.out.println("Pantalla cerrada y objetos liberados.");
+            controlador.getVista().setVisible(false);// otra forma llamando la vista
         }
+    }
+    
+    // Menu
+    public static void abrirMenu() {
+        VMenuClases vista = new VMenuClases();
+        
+        vista.setVisible(true);
+        vista.setLocationRelativeTo(null);
+        vista.setTitle("Menu de inicio.");
     }
     
 }

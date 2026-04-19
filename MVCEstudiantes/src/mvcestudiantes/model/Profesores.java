@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -64,3 +65,71 @@ public class Profesores {
     
     
 }
+=======
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package mvcestudiantes.model;
+
+/**
+ *
+ * @author Usuario
+ */
+public class Profesores {
+    
+    private int id;
+    private String nombre;
+    private String apellido;
+    private String materia;
+
+    public Profesores() {
+    }
+
+    public Profesores(int id, String nombre, String apellido, String materia) {
+        this.id = id;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.materia = materia;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getMateria() {
+        return materia;
+    }
+
+    public void setMateria(String materia) {
+        this.materia = materia;
+    }
+
+    @Override
+    public String toString() {
+        return "Profesores{" + "id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", materia=" + materia + '}';
+    }
+    
+    
+}
+>>>>>>> c4f450b99f6a37af5b39f237b0d3e47335cd070c

@@ -16,7 +16,11 @@ public class MVCEstudiantes {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+<<<<<<< HEAD
         ScreenManager.abrirEstudiantes();
+=======
+        ScreenManager.abrirMenu();
+>>>>>>> c4f450b99f6a37af5b39f237b0d3e47335cd070c
     }
     
 }

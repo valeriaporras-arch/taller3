@@ -18,7 +18,16 @@ import mvcestudiantes.view.ScreenManager;
  *
  * @author UIS
  */
-public class CEstudiante implements ActionListener{// val.
+public class CEstudiante implements ActionListener{
+   //getter
+    public VEstudiante getVista() {
+        return vista;
+    }
+
+    // val.
+    public EstudianteDAO getDao() {
+        return dao;
+    }
     
     private VEstudiante vista;
     private EstudianteDAO dao;
@@ -41,7 +50,11 @@ public class CEstudiante implements ActionListener{// val.
         llenarTabla();
     }
     
+<<<<<<< HEAD
     
+=======
+ 
+>>>>>>> c4f450b99f6a37af5b39f237b0d3e47335cd070c
     
     @Override
     public void actionPerformed(ActionEvent e) {

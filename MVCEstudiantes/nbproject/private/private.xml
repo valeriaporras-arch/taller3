@@ -2,6 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group/>
+=======
+        <group>
+            <file>file:/C:/Users/UIS/Documents/NetBeansProjects/talleres-main/talleres-main/MVCEstudiantes/src/mvcestudiantes/view/VMenuClases.java</file>
+            <file>file:/C:/Users/UIS/Documents/NetBeansProjects/talleres-main/talleres-main/MVCEstudiantes/src/mvcestudiantes/view/ScreenManager.java</file>
+            <file>file:/C:/Users/UIS/Documents/NetBeansProjects/talleres-main/talleres-main/MVCEstudiantes/src/mvcestudiantes/MVCEstudiantes.java</file>
+        </group>
+>>>>>>> c4f450b99f6a37af5b39f237b0d3e47335cd070c
     </open-files>
 </project-private>

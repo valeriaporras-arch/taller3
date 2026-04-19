@@ -36,6 +36,8 @@ public class ScreenManager {
             controlador = null;
             
             System.out.println("Pantalla cerrada yobjetos liberados.");
+            controlador.getVista().setVisible(false);
+            
         }
     }
     
@@ -48,7 +50,11 @@ public class ScreenManager {
         
         vista.setVisible(true);
         vista.setLocationRelativeTo(null);
+<<<<<<< HEAD
         vista.setTitle("Manu Gestion academica.");
+=======
+        vista.setTitle("Menu Gestion academica.");
+>>>>>>> c4f450b99f6a37af5b39f237b0d3e47335cd070c
     }
     
     public static void cerrarMateria(CMateria controlador) {
@@ -57,6 +63,10 @@ public class ScreenManager {
             controlador = null;
             
             System.out.println("Pantalla cerrada y objetos liberados.");
+<<<<<<< HEAD
+=======
+            controlador.getVista().setVisible(false);
+>>>>>>> c4f450b99f6a37af5b39f237b0d3e47335cd070c
         }
     }
     //    PROFESORES
@@ -68,6 +78,7 @@ public class ScreenManager {
         
         vista.setVisible(true);
         vista.setLocationRelativeTo(null);
+<<<<<<< HEAD
         vista.setTitle("Manu gestion academica.");
     }
     
@@ -80,4 +91,28 @@ public class ScreenManager {
         }
     }
     
+=======
+        vista.setTitle("Menu gestion academica.");
+    }
+    
+    public static void cerrarProfesor(CProfesores controlador) {
+        if (controlador != null) {
+            controlador.finalizar();//1 forma de cerrar desde el controller
+            controlador = null;
+            
+            System.out.println("Pantalla cerrada y objetos liberados.");
+            controlador.getVista().setVisible(false);// otra forma llamando la vista
+        }
+    }
+    
+    // Menu
+    public static void abrirMenu() {
+        VMenuClases vista = new VMenuClases();
+        
+        vista.setVisible(true);
+        vista.setLocationRelativeTo(null);
+        vista.setTitle("Menu de inicio.");
+    }
+    
+>>>>>>> c4f450b99f6a37af5b39f237b0d3e47335cd070c
 }

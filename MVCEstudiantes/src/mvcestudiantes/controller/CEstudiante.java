@@ -50,11 +50,7 @@ public class CEstudiante implements ActionListener{
         llenarTabla();
     }
     
-<<<<<<< HEAD
-    
-=======
  
->>>>>>> c4f450b99f6a37af5b39f237b0d3e47335cd070c
     
     @Override
     public void actionPerformed(ActionEvent e) {
